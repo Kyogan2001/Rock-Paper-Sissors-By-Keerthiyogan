@@ -1,0 +1,142 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+
+
+:root{
+    --text-color:black;
+    --background-color:#fff;
+    --white-color:#fff;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    font-size: 16px;
+}
+
+
+body{
+    font-family: 'poppins', sans-serif;
+    background-color: aqua;
+    background-image: linear-gradient(250deg, #5de6de 0%, #b58ecc 74%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100vw;
+    color: var(--text-color);
+}
+
+main{
+    min-height: 30rem;
+    min-width: 35rem;
+    background-color: var(--background-color);
+    border-radius: 10px;
+    box-shadow:  7px 7px 30px #000000;
+    padding: 2rem;
+}
+
+
+header{
+    height: 8rem;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 0.5rem;
+}
+
+header h1 {
+    display: flex;
+    flex-direction: column;
+    font-size: 1.5rem;
+    line-height: 1.2;
+}
+
+header p {
+    font-size:1.2 ;
+}
+
+.hands {
+    height: 10rem;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 0.1rem;
+}
+
+.hands button{
+    width:8rem;
+    height: 8rem;
+    border-radius: 50%;
+    font-size: 5rem;
+    color: white;
+    background-color: black;
+    border: 0;
+    cursor:grab;
+    box-shadow: none;
+    transition: all 0.1s ease;
+}
+
+.hands button:hover{
+    transform: translateY(5px);
+    box-shadow:  7px 7px 20px #000000;
+    color: black;
+    background-color: #fff;
+}
+
+.hands button:hover:active{
+    transform:rotate(15deg);
+    box-shadow:  none;
+}
+
+
+.result {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    font-size: 1.2rem;
+    font-weight: 300;
+}
+
+.result button{
+    padding: 0.5rem 1.5rem;
+    background-color:#ffffff;
+    color: black;
+    width: 50%;
+    font-size: 1.2rem;
+    font-weight: bold;
+    border: none;
+    cursor: pointer;
+    transition: all 0.8s ease-in;
+}
+
+.result button:hover{
+    transform: translate(1px,1px,0);
+    box-shadow:  7px 7px 10px #000000;
+    color: black;
+}
+
+.result button:hover:active{
+    box-shadow:  none;
+}
+
+
+.result p {
+    margin-bottom: 0.5rem;
+    margin-top: 0.5rem;
+}
+
+.result_msg{
+    padding: 0.5rem 1.5rem;
+    background-color:#fdfdfd;
+    color: black;
+    width: 50%;
+    margin: auto;
+    font-size: 1.4rem;
+    font-weight: bold;
+}
+
+.hidden{
+    display: none;
+}
