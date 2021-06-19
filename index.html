@@ -29,10 +29,10 @@
                 </p>
             </div>
         </header>
-        <section class="hands">
-            <button><i class="far fa-hand-rock"></i></button>
-            <button><i class="far fa-hand-paper"></i></button>
-            <button><i class="far fa-hand-scissors"></i></button>
+        <section class="hands hidden">
+            <button><i class="far fa-hand-rock" onclick="check_e('rock')"></i></button>
+            <button><i class="far fa-hand-paper" onclick="check_e('paper')"></i></button>
+            <button><i class="far fa-hand-scissors" onclick="check_e('scissors')"></i></button>
         </section>
         <section class="result">
             <div class="game_start" id="game_start">
@@ -40,7 +40,7 @@
             </div>
             <div class="game_result hidden" id="game_result">
                 <p id="User_choice"></p>
-                <p id="Coumpter_choice"></p>
+                <p id="Computer_choice"></p>
                 <div id="result" class="result_msg"></div>
             </div>
         </section>
